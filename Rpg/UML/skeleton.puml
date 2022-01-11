@@ -1,0 +1,85 @@
+﻿@startuml
+'' skeleton
+title body -> Body Diagram
+class Hand{
+         Fingers Fingers
+         MergeBoneMuscle Palm
+
+         Hand()
+ }
+ class Bone{
+ bool Broken 
+         bool Sprained 
+
+         bool Missing 
+         bool Dislocated 
+
+         Bone()
+
+    }
+class Muscle{
+     int Damage 
+     bool Stretched 
+     bool Torn 
+
+     Muscle()
+}
+class Fingers{
+     Bone BPinkyTip
+     Bone BPinkyMid
+     Bone BPinkyBase
+     Bone BRingTip
+     Bone BRingMid
+     Bone BRingBase
+     Bone BMiddleTip
+     Bone BMiddleMid
+     Bone BMiddleBase
+     Bone BPointingTip
+     Bone BPointingMid
+     Bone BPointingBase
+     Bone BThumbTip
+     Bone BThumbBase
+     Muscle MPinkyTip
+     Muscle MPinkyMid
+     Muscle MPinkyBase
+     Muscle MRingTip
+     Muscle MRingMid
+     Muscle MRingBase
+     Muscle MMiddleTip
+     Muscle MMiddleMid
+     Muscle MMiddleBase
+     Muscle MPointingTip
+     Muscle MPointingMid
+     Muscle MPointingBase
+     Muscle MThumbTip
+     Muscle MThumbBase
+     Skin SPinkyTip
+     Skin SPinkyMid
+     Skin SPinkyBase
+     Skin SRingTip
+     Skin SRingMid
+     Skin SRingBase
+     Skin SMiddleTip
+     Skin SMiddleMid
+     Skin SMiddleBase
+     Skin SPointingTip
+     Skin SPointingMid
+     Skin SPointingBase
+     Skin SThumbTip
+     Skin SThumbBase
+     Fingers()
+}
+
+class Skin{
+         int Laceration
+         bool Torn
+
+         Skin()
+    }
+
+Fingers <- Bone
+Fingers <- Muscle
+Fingers <- Skin
+Hand <- Fingers
+
+@enduml

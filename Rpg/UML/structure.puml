@@ -1,0 +1,99 @@
+﻿@startuml
+    class Player{
+        int xp
+        int lvl
+        int xpToLvl
+        int maxHp
+        int maxMp
+        Body BodyStatus
+    }
+    class Class{
+        string Name
+        int Hp
+        int Mp
+        int mDmg
+        int fDmg
+    }
+
+    class Bone{
+        bool Broken
+        bool Sprained
+        bool Dislocated
+    }
+
+    class Muscle {
+        string Name
+        int Lasseration
+        bool Torn
+    }
+
+    class Skin{
+        int Lasseration
+        bool Torn
+    }
+    class Bone{
+        Bone LeftHand
+        Bone RightHand
+        Bone LeftLowerArm
+        Bone RightLowerArm
+        Bone LeftUpperArm
+        Bone RightUpperArm
+        Bone Ribs
+        Bone LeftThigh
+        Bone RightThigh
+        Bone LeftLeg
+        Bone RightLeg
+        Bone LeftFoot
+        Bone RightFoot
+    }
+    class Muscle{
+        Muscle LeftHand
+        Muscle RightHand
+        Muscle LeftLowerArm
+        Muscle RightLowerArm
+        Muscle LeftUpperArm
+        Muscle RightUpperArm
+        Muscle Torso
+        Muscle LeftThigh
+        Muscle RightThigh
+        Muscle LeftLeg
+        Muscle RightLeg
+        Muscle LeftFoot
+        Muscle RightFoot
+    }
+
+    class SkinB{
+        Skin LeftHand
+        Skin RightHand
+        Skin LeftLowerArm
+        Skin RightLowerArm
+        Skin LeftUpperArm
+        Skin RightUpperArm
+        Skin Torso
+        Skin LeftThigh
+        Skin RightThigh
+        Skin LeftLeg
+        Skin RightLeg
+        Skin LeftFoot
+        Skin RightFoot
+    }
+
+    class Body{
+        Bone BoneBody
+        Muscle BodyMuscle
+        SkinB SkinBody
+        
+    }
+
+
+    Bone -> Bone
+    Muscle -> Muscle
+    Skin -> SkinB
+    SkinB -> Body
+    Muscle -> Body
+    Bone -> Body
+    Body -> Player
+    Class -> Player
+
+
+@enduml
