@@ -38,10 +38,13 @@ namespace Rpg
                 {"Index", 3},
                 {"Thumb", 2}
             };
-            var hand = new Hand(fingers, "right");
-           
-            
-            DrawHand(fingers, hand);
+            var rightHand = new Hand(fingers, "right");
+            var leftHand = new Hand(fingers, "left");
+
+            Console.WriteLine("Right Hand");
+            DrawHand(fingers, rightHand);
+            Console.WriteLine("Left Hand");
+            DrawHand(fingers, leftHand);
             Console.ReadLine();
         }
 
