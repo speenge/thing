@@ -4,6 +4,7 @@ namespace Rpg
 {
     internal class Fingers
     {
+        /*
         public Bone BPinkyTip;
         public Bone BPinkyMid;
         public Bone BPinkyBase;
@@ -94,5 +95,6 @@ namespace Rpg
             SThumbTip = new Skin();
             SThumbBase = new Skin();
         }
+    */
     }
 }
