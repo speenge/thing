@@ -8,7 +8,7 @@ namespace Rpg
 {
     internal class SetBoneMuscleSkin
     {
-        public Bone Bone;
+      /*  public Bone Bone;
         public Muscle Muscle;
 
         public SetBoneMuscleSkin()
@@ -16,5 +16,6 @@ namespace Rpg
             Bone = new Bone();
             Muscle = new Muscle();
         }
+    */
     }
 }

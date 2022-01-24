@@ -11,11 +11,11 @@ namespace Rpg
         public List<Bone> Bones = new ();
         public string FingerName;
 
-        public Finger(string fingerName, int joints)
+        public Finger(string fingerName, int joints, string handDirection)
         {
             for (var i = 0; i < joints; i++)
             {
-                Bones.Add(new Bone());
+                Bones.Add(new Bone(handDirection, fingerName));
             }
 
             FingerName = fingerName;
